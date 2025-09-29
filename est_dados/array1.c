@@ -2,10 +2,10 @@
 
 int main(){
 
-	int n,media,soma=0;
+	int n,soma=0;
+	float media;
 	printf("\nintruduzir linhas 'n':");
 	scanf("%d",&n);
-
 
 	int vec[n];
 
@@ -15,7 +15,7 @@ int main(){
 	}
 	
 	media=soma/n;
-	printf("\n soma: %d \n media: %d\n",soma ,media);
+	printf("\n soma: %d \n media: %f\n",soma ,media);
 
 return 0;
 }
