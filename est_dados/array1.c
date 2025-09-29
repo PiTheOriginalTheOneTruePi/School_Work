@@ -2,8 +2,8 @@
 
 int main(){
 
-	int n,soma=0;
-	float media;
+	int n;
+	float soma=0,media;
 	printf("\nintruduzir linhas 'n':");
 	scanf("%d",&n);
 
@@ -15,7 +15,7 @@ int main(){
 	}
 	
 	media=soma/n;
-	printf("\n soma: %d \n media: %f\n",soma ,media);
+	printf("\n soma: %f \n media: %f\n",soma ,media);
 
 return 0;
 }
