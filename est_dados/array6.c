@@ -4,11 +4,9 @@
 int main(){
 
 	int n,m,i,j,soma;
-	printf("Numero de linhas da matriz");
+	printf("Numero de linhas e colunas da matriz");
 	scanf("%d",&n);
-	printf("Numero de colunas da matriz");
-	scanf("%d",&m);
-	int mat[n][m];
+	int mat[n][n];
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
 			scanf("%d",&mat[i][j]);
