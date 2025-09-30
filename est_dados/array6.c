@@ -12,7 +12,7 @@ int main(){
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
 			scanf("%d",&mat[i][j]);
-			if (i=j+1){
+			if (i==j){
 				soma=soma+mat[i][j];
 			}
 
