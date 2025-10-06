@@ -38,7 +38,17 @@ long factorial(int num){
 }
 
 long primo(long num){
+	
+	int i,np=(int)num/2;
 
+	if(num<2)return 0;
+	if(num==2)return 1;
 
-	return
+	i=2;
+
+	while((num % i !=0) && (i<=np)) i++;
+
+	if(num % i !=0) return 1;
+
+	else return 0;
 }
