@@ -13,7 +13,7 @@ int main(){
 		}
 	}
 	for(i=0;i<n;i++){
-	soma=soma+mat[i][n-1-i]	
+	soma=soma+mat[i][n-1-i];	
 	}
 	printf("%d",soma);
 	
