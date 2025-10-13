@@ -3,7 +3,7 @@
 
 int main(){
 
-	int n,m,i,j,soma;
+	int n,m,i,j,soma=0;
 	printf("Numero de linhas e linhas  da matriz");
 	scanf("%d",&n);
 	int mat[n][n];

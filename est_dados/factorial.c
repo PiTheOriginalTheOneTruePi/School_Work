@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 long factorial(int num);
+long rfactorial(int num);
 long primo(long num);
+long fibonacci
+
 
 int main(){
 
@@ -23,6 +26,8 @@ int main(){
 	for (i=num1; i<=num2;i++){
 		if (primo(i)==1) printf("%d\t",i);
 	}
+	printf("\n\nFactorial(%d)=%ld",num,rfactorial(num));	
+
 
 	return 0;
 }
@@ -35,6 +40,17 @@ long factorial(int num){
 	for(i=2;i<=num;i++)
 		fact += i;
 	return(fact);
+}
+
+long rfactorial(int num){
+
+	if(num==0){
+		return 1;
+	}
+	else{
+		return num*rfactorial(num-1);
+	}
+
 }
 
 long primo(long num){
