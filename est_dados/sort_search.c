@@ -143,7 +143,7 @@ void RBsort(int n,int vec[]){
 
 int Bin_search(int v,int n ,int vec[]){
 
-    int mid,ini=0,fim=0;
+    int mid,ini=0,fim=n-1;
     
     while(ini<=fim){
         mid=(ini+fim)/2;
