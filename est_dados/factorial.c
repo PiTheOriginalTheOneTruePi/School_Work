@@ -74,6 +74,24 @@ long primo(long num){
 	else return 0;
 }
 long fibonacci(int n){
+//teste 
+	int r=0,i=1,x=1,y=0;
+	
+	if(n==1)
+		return 1;
+
+	for (i;i<n;i++){
+		r=x+y;
+		y=x;
+		x=r;
+		printf("fibonaci de (%d) = %d",i,r);
+	}
+	return r;
+
+
+}
+/*
+long fibonacci(int n){
 
 	int r=0,i=1,x=1,y=0;
 	
@@ -89,6 +107,7 @@ long fibonacci(int n){
 
 
 }
+*/
 long rfibonacci(int n){
 
 	if(n==0)
