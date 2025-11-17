@@ -7,6 +7,7 @@ void Rsort(int n, int vec[]);
 void Bsort(int n, int vec[]);
 void RBsort(int n, int vec[]);
 int Bin_search(int v,int n, int vec[]);
+int rBin_search(int v,int ini,int fim, int vec[]);
 
 
 int main(){
@@ -55,7 +56,11 @@ int main(){
     }else{
             printf("\no valor existe na posicao %d do vetor",Bin_search(v,t,vec));
     }
-
+    if(rBin_search(v,0,t,vec)==-1){
+            printf("\nvalor nao existe no vetor");
+    }else{
+            printf("\no valor existe na posicao %d do vetor",Bin_search(v,t,vec));
+    }
 
 	return 0;
 }
@@ -156,5 +161,28 @@ int Bin_search(int v,int n ,int vec[]){
         }
     }
     return -1;
+}
+int rBin_search(int v,int ini,int fim ,int vec[]){
+
+    int mid,res;
+
+    if(ini > fim){ 
+        return -1;
+    }
+    else{
+        mid=(int)((ini+fim)/2);
+        if(v<vec[mid]){
+            res= rBin_search(v,ini,mid-1,vec);
+        }
+        else if(v>vec[mid]){
+            res= rBin_search(v,mid+1,fim,vec);
+        }
+        else{
+            res=mid;
+        }
+    }
+    return(res);
+
+
 }
 
